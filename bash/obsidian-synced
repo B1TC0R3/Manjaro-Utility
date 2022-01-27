@@ -33,11 +33,12 @@ function push()
     git commit -m "Automated commit `date`" &> /dev/null
     git push origin main &> /dev/null
 
+    clear
     if [ $? -eq 0 ]
     then
-        echo -e "${COL_GREEN}Vault synchronized!   ${CHECKMARK}${COL_DEFAULT}"
+        echo -e "${COL_GREEN}Vault synchronized! Time: `date`   ${CHECKMARK}${COL_DEFAULT}"
     else
-        echo -e "${COL_RED}Push failed!   X${COL_DEFAULT}" 
+        echo -e "${COL_RED}Push failed! Time: `date`  X${COL_DEFAULT}" 
     fi
 }
 
