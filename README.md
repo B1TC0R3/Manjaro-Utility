@@ -50,7 +50,7 @@ tui.obj.selection_up()
 
 To execute the function at the selected index, use:
 ```python
-tui_obj.Execute_selected_item()
+tui_obj.execute_selected_item()
 ```
 **Helpful**\
 for working with the engine, changing selection with e.g. arrow keys might be a little
