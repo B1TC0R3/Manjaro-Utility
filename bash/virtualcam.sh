@@ -1,7 +1,14 @@
 #/bin/bash
 
+if ! modinfo v4l2loopback &> /dev/null ;
+then	
+	echo -e "\033[31mError\033[0m: v4l2loopback not installed!\nPlease install this module first."
+	exit -1
+fi
+
 reload_v4l2loopback () {
-	if lsmod | grep v4l2loopback &> /dev/null ; then
+	if lsmod | grep v4l2loopback &> /dev/null ;
+       	then
 		echo -e "\033[33mv4l2loopback already running!\033[0m"
 		echo "Unloading v4l2loopback..."
 		sudo rmmod v4l2loopback 
