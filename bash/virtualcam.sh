@@ -1,11 +1,5 @@
 #/bin/bash
 
-if ! modinfo v4l2loopback &> /dev/null ;
-then	
-	echo -e "\033[31mError\033[0m: v4l2loopback not installed!\nPlease install this module first."
-	exit -1
-fi
-
 reload_v4l2loopback () {
 	if lsmod | grep v4l2loopback &> /dev/null ;
        	then
@@ -31,6 +25,12 @@ prnt_help() {
 	echo -e "\033[32mOPTIONS\n\t-f\033[0m Describes the file that is to be used.\n"
 	echo -e "\033[32m\t-h\033[0m Display help for virtualcam.sh.\n"
 }
+
+if ! modinfo v4l2loopback &> /dev/null ;
+then	
+	echo -e "\033[31mError\033[0m: v4l2loopback not installed!\nPlease install this module first."
+	exit -1
+fi
 
 while getopts ":f:h" option;
 do
