@@ -3,11 +3,11 @@
 reload_v4l2loopback () {
 	if lsmod | grep v4l2loopback &> /dev/null ; then
 		echo -e "\033[33mv4l2loopback already running!\033[0m"
-		echo "Unloading v4l2loopback (root required)..."
+		echo "Unloading v4l2loopback..."
 		sudo rmmod v4l2loopback 
 	fi
 
-	echo "Loading v4l2loopback (root required)..."
+	echo "Loading v4l2loopback..."
 	sudo modprobe v4l2loopback video_nr=9
 }
 
