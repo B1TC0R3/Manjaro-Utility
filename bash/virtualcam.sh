@@ -12,7 +12,7 @@ reload_v4l2loopback () {
 }
 
 vid_ffmpeg() {
-	echo -e "Starting virtual camera with $1.\nUse \033[32mctrl+C\033[0m to exit"
+	echo -e "Starting virtual camera with $1.\nUse \033[32mctrl+C\033[0m to exit."
 	ffmpeg -re -stream_loop -1 -i $1 -f v4l2 /dev/video9
 }
 
@@ -25,7 +25,7 @@ prnt_help() {
 	echo -e "\033[32m-help\033[0m Display help for virtualcam.sh."
 }
 
-while getopts ":fh:" option;
+while getopts ":f:h:" option;
 do
 	case $option in
 		f) # Run with video from file
