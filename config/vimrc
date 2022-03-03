@@ -1,3 +1,6 @@
+" Add line number
+:set number
+
 " Install plugins
 call plug#begin('~/.vim/bundle/')
 
