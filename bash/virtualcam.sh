@@ -17,15 +17,15 @@ vid_ffmpeg() {
 }
 
 prnt_help() {
-	echo "VIRTUALCAM(1)\n"
+	echo -e "VIRTUALCAM(1)\n"
 	echo -e "\033[32mNAME\033[0m\n\tvirtualcam.sh\n"
-	echo -e "\033[32mSYNOPSIS\033[0m\n\tvirtualcam.sh [\033[36mOPTION\033[0m...] [\033[36mFILE\033[0m...]"
-	echo -e "\033[32mDESCRIPTION\033[0m\n\n\tA short wrapper for v4l2loopback and ffmeg.\nCreates a virtual camera from a video file."
-	echo -e "\033[32mOPTIONS\n\t-file\033[0m Describes the file that is to be used.\n"
-	echo -e "\033[32m-help\033[0m Display help for virtualcam.sh."
+	echo -e "\033[32mSYNOPSIS\033[0m\n\tvirtualcam.sh [\033[36mOPTION\033[0m...] [\033[36mFILE\033[0m...]\n"
+	echo -e "\033[32mDESCRIPTION\033[0m\n\n\tA short wrapper for v4l2loopback and ffmeg.\n\tCreates a virtual camera from a video file.\n"
+	echo -e "\033[32mOPTIONS\n\t-f\033[0m Describes the file that is to be used.\n"
+	echo -e "\033[32m\t-h\033[0m Display help for virtualcam.sh.\n"
 }
 
-while getopts ":f:h:" option;
+while getopts ":f:h" option;
 do
 	case $option in
 		f) # Run with video from file
