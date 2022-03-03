@@ -32,6 +32,12 @@ then
 	exit -1
 fi
 
+if ! which ffmpeg &> /dev/null ;
+then
+	echo -e "\033[31mError\033[0m: ffmpeg not installed!\nPlease install this application first."
+	exit -1;
+fi
+
 while getopts ":f:h" option;
 do
 	case $option in
