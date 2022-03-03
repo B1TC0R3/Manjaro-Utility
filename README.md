@@ -3,6 +3,7 @@ This repository contains shell-scripts and other usefull tools i created to help
 
 - [Bash](#bash)
   - [obsidian-synced](#obsidian-synced)  
+  - [virtualcam](#virtualcam)
 - [Python](#python)
   - [tui_engine](#tui_engine) 
 
@@ -18,6 +19,17 @@ a password every minute.
 ./obsidian-synced <target-directory>
 ```
 *\<target-directory\>* has to be a git-repository in order for the script to successfully push any changes. 
+
+### virtualcam
+This is a script to create a virtual camera with v4l2loopback.
+This camera will play back any video.
+The video format should be **mp4**.
+*Requires v4l2loopback to be installed.*
+
+**Usage**
+```bash
+./virtualcam <path to mp4>
+```
 
 --- 
 
