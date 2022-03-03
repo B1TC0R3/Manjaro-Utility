@@ -28,7 +28,7 @@ The video format should be **mp4**.
 
 **Usage**
 ```bash
-./virtualcam <path to mp4>
+./virtualcam <path to video>
 ```
 
 --- 
