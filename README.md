@@ -22,13 +22,13 @@ a password every minute.
 
 ### virtualcam
 This is a script to create a virtual camera with v4l2loopback.
-This camera will play back any video.
+The camera will play back any video.
 The video format should be **mp4**.
 *Requires v4l2loopback and ffmpeg to be installed.*
 
 **Usage**
 ```bash
-./virtualcam -f <path to video> # start the application
+./virtualcam.sh -f <path to video> # start the application
 ./virtualcam.sh -h              # print help
 ```
 
