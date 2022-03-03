@@ -29,9 +29,8 @@ while getopts ":f:h:" option;
 do
 	case $option in
 		f) # Run with video from file
-			path=$OPTARG 
 			reload_v4l2loopback
-		 	vid_ffmpeg $path
+		 	vid_ffmpeg $OPTARG
 			exit;;	
 		h) # Display help
 			prnt_help
