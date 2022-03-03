@@ -12,7 +12,7 @@ call plug#end()
 
 " configure syntax-checker
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStauslineFlag()}
+set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 set signcolumn=yes
