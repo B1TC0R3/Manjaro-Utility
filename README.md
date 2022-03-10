@@ -27,7 +27,7 @@ The video format should be **mp4**.
 **Usage**
 ```bash
 ./virtualcam.sh -f <path to video> # start the application
-./virtualcam.sh -h              # print help
+./virtualcam.sh -h                 # print help
 ```
 
 
