@@ -1,5 +1,6 @@
 # Manjaro-Utility
 This repository contains shell-scripts and other usefull tools i created to help me with my daily life.
+It also holds some smaller pratice programs.
 
 - [Bash](#bash)
   - [obsidian-synced](#obsidian-synced)  
@@ -30,4 +31,21 @@ The video format should be **mp4**.
 ./virtualcam.sh -h                 # print help
 ```
 
+## C 
+
+### helloworld
+Well, it kinda explains itself, its just a hello world app in C.
+
+### pipe_test
+My first steps in trying to deal with piped input.
+
+## C++
+
+### roman_number_converter
+Converts roman number strings to integers.
+
+**Usage**
+Does not take any command line arguments.
+What exactly its called depends on what name you give
+it while building.
 
