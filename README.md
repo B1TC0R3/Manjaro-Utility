@@ -5,6 +5,11 @@ It also holds some smaller pratice programs.
 - [Bash](#bash)
   - [obsidian-synced](#obsidian-synced)  
   - [virtualcam](#virtualcam)
+- [C](#C)
+  - [helloworld](#helloworld)
+  - [pipe_test](#pipe_test)
+- [C++](#C++)
+  - [roman_number_converter](#roman_number_converter)
 
 ## Bash
 
