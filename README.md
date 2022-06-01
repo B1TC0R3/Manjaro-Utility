@@ -50,7 +50,5 @@ My first steps in trying to deal with piped input.
 Converts roman number strings to integers.
 
 **Usage**
-Does not take any command line arguments.
-What exactly its called depends on what name you give
-it while building.
+Simply run the binary, it will prompt for input.
 
