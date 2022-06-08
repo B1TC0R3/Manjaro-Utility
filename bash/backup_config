@@ -28,7 +28,7 @@ files=(
 
 echo "Copying files..."
 for elem in ${files[@]}; do
-	install -DC $elem $1/$elem 1>/dev/null && echo -e "Backed up: \e[36m$elem\e[39m"
+	install -DC $elem $repository/$elem 1>/dev/null && echo -e "Backed up: \e[36m$elem\e[39m"
 done
 echo -e "\e[32mCopying finished!\e[39m"
 
