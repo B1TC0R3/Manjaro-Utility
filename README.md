@@ -2,20 +2,11 @@
 This repository contains shell-scripts and other usefull tools i created to help me with my daily life.
 It also holds some smaller pratice programs.
 
-- [Bash](#bash)
-  - [obsidian-synced](#obsidian-synced)  
-  - [virtualcam](#virtualcam)
-- [C](#C)
-  - [helloworld](#helloworld)
-  - [pipe_test](#pipe_test)
-- [C++](#C++)
-  - [roman_number_converter](#roman_number_converter)
-
 ## Bash
 
 ### obsidian-synced
 This is a tool that automatically synchronizes my obsidian vaults with a private git repository.
-Note, that the tool requires a ssh connection to git in order to function without forcing the user to enter 
+Note that the tool requires a ssh connection to git in order to function without forcing the user to enter 
 a password every minute.
 
 **Usage**
@@ -36,19 +27,11 @@ The video format should be **mp4**.
 ./virtualcam.sh -h                 # print help
 ```
 
-## C 
-
-### helloworld
-Well, it kinda explains itself, its just a hello world app in C.
-
-### pipe_test
-My first steps in trying to deal with piped input.
-
-## C++
-
-### roman_number_converter
-Converts roman number strings to integers.
+### clean_install
+A small `pacman` and `yay` wrapper that clears the cache after a successfull install.
+It tries to install the wanted package with pacman first. Should this fail, it will prompt for a `yay` install.
 
 **Usage**
-Simply run the binary, it will prompt for input.
-
+```bash
+./clean_install <package-name>
+```
