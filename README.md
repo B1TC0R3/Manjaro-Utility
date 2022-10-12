@@ -6,7 +6,7 @@ It also holds some smaller pratice programs.
 
 ### obsidian-synced
 This is a tool that automatically synchronizes my obsidian vaults with a private git repository.
-Note, that the tool requires a ssh connection to git in order to function without forcing the user to enter 
+Note that the tool requires a ssh connection to git in order to function without forcing the user to enter 
 a password every minute.
 
 **Usage**
