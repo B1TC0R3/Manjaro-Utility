@@ -1,5 +1,7 @@
 #/bin/bash
 
+VIDEO_NR=1
+
 reload_v4l2loopback () {
     if lsmod | grep v4l2loopback &> /dev/null ;
         then
@@ -9,12 +11,12 @@ reload_v4l2loopback () {
     fi
 
     echo "Loading v4l2loopback..."
-    sudo modprobe v4l2loopback video_nr=9 card_label="FFMPEG" exclusive_caps=1
+    sudo modprobe v4l2loopback video_nr=$VIDEO_NR card_label="FFMPEG" exclusive_caps=1
 }
 
 vid_ffmpeg() {
     echo -e "Starting virtual camera with $1.\nUse \033[32mctrl+C\033[0m to exit."
-    ffmpeg -re -stream_loop -1 -i $1 -f v4l2 /dev/video9
+    ffmpeg -re -stream_loop -1 -i $1 -f v4l2 /dev/video$VIDEO_NR
 }
 
 prnt_help() {
