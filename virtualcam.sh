@@ -1,6 +1,6 @@
 #/bin/bash
 
-VIDEO_NR=1
+VIDEO_NR=9
 
 reload_v4l2loopback () {
     if lsmod | grep v4l2loopback &> /dev/null ;
