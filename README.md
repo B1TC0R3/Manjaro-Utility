@@ -6,14 +6,14 @@ It also holds some smaller pratice programs.
 
 ### obsidian-synced
 This is a tool that automatically synchronizes my obsidian vaults with a private git repository.
-Note that the tool requires a ssh connection to git in order to function without forcing the user to enter 
+Note that the tool requires a ssh connection to git in order to function without forcing the user to enter
 a password every minute.
 
 **Usage**
 ```bash
 ./obsidian-synced <target-directory>
 ```
-*\<target-directory\>* has to be a git-repository in order for the script to successfully push any changes. 
+*\<target-directory\>* has to be a git-repository in order for the script to successfully push any changes.
 
 ### virtualcam
 This is a script to create a virtual camera with v4l2loopback.
@@ -34,4 +34,18 @@ It tries to install the wanted package with pacman first. Should this fail, it w
 **Usage**
 ```bash
 ./clean_install <package-name>
+```
+
+### better_uninstall
+A script to uninstall packages which will suggest packages with similar names if you dont fully remember the name of the package you want to uninstall.
+
+**Usage**
+```bash
+./better_uninstall <package-name>
+```
+
+### better_search
+This script searches packages using both `pacman` and `yay`.
+```bash
+./better_search <package-name>
 ```
