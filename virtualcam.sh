@@ -54,4 +54,6 @@ do
             echo -e "\033[31mError: Invalid option!\033[0m\nUse -h for information."
             exit;;
     esac
+
+    prnt_help
 done
