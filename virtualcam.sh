@@ -30,7 +30,7 @@ prnt_help() {
 
 if ! modinfo v4l2loopback &> /dev/null ;
 then
-    echo -e "\033[31mError\033[0m: v4l2loopback not installed!\nPlease install this module first."
+    echo -e "\033[31mError\033[0m: v4l2loopback not installed!\nPlease install 'v4l2loopback-dkms' first."
     exit -1
 fi
 
