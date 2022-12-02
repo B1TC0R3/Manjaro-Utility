@@ -16,7 +16,7 @@ reload_v4l2loopback () {
 
 vid_ffmpeg() {
     echo -e "Starting virtual camera with $1.\nUse \033[32mctrl+C\033[0m to exit."
-    ffmpeg -re -stream_loop -1 -i $1 -f v4l2 /dev/video$VIDEO_NR
+    ffmpeg -re -stream_loop -1 -i $1 -vf scale=1280:720 -f v4l2 /dev/video$VIDEO_NR
 }
 
 prnt_help() {
