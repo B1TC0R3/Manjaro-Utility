@@ -11,8 +11,8 @@ sudo pacman -Syu
 print_green "Updating yay packages..."
 yay -Syu
 
-print_green "Clearing yay cache..."
-yes | yay -Sc && print_green "Cache cleared (yay)!"
+print_green "Clearing cache..."
+yes | yay -Sc && print_green "Cache cleared!"
 
 print_green "Update complete!"
 
