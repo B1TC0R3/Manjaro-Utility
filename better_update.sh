@@ -6,6 +6,7 @@ function print_green () {
 }
 
 print_green "Updating..."
+sudo pacman -Sy archlinux-keyring
 yay -Syu
 
 print_green "Clearing cache..."
